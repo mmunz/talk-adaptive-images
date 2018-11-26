@@ -1,0 +1,38 @@
+<?php
+$title = "picture";
+$body = <<<EOT
+<h2>picture tag and ratio box</h2>
+<textarea id="code" name="code" class="code">
+<head>
+    <style>
+        img {display: block;}
+        .img-fluid {max-width: 100%;height: auto}
+        .ratiobox{position: relative; display: block; height: 0; max-width: 100%; padding-bottom: 28.125%}
+        @media (max-width: 599px) {
+            .ratiobox {padding-bottom: 75%;}
+        }
+        .ratiobox img,
+        .ratiobox picture {display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; max-width: inherit;}
+    </style>
+</head>
+<body>
+    <p>picture with one source, srcset and sizes and ratio box</p>
+    <div class="ratiobox">
+        <picture>
+            <source media="(max-width: 599px)"
+                    srcset="/examples/img.php?w=160&h=120&d=2 160w, /examples/img.php?w=320&h=240&d=2 320w"
+                    sizes="100vw">
+            <img src="/examples/img.php?w=640&h=180&d=2"
+                 srcset="/examples/img.php?w=640&h=180&d=2 640w, /examples/img.php?w=960&h=240&d=2 960w"
+                 sizes="100vw"
+                 alt="" width="640" height="180" class="img-fluid" />
+        </picture>
+    </div>
+    <p>This line is here to demonstrate <b>page reflow</b>.</p>
+</body>
+</textarea>
+EOT;
+
+include(__DIR__ . "/00-template.php");
+
+

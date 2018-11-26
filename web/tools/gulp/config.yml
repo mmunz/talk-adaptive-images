@@ -1,0 +1,11 @@
+---
+svg:
+  icons:
+    src: ../../assets/img/svg/*.svg
+    dst: ../../assets/img/svg_symbol/
+    config:
+      mode:
+        view:
+          render:
+            css: true
+        symbol: true

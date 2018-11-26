@@ -1,0 +1,23 @@
+#preview-mobile {
+    border: 1px solid blue;
+    width: 320px;
+    height: 400px;
+    box-sizing: border-box;
+}
+#preview-desktop {
+    border: 1px solid orange;
+    width: calc(100% - 320px);
+    height: 400px;
+    box-sizing: border-box;
+}
+
+.code, .CodeMirror {
+    width: 100%;
+    max-height: 360px;
+    border: 1px solid green;
+    border-bottom: 1px solid #888;
+    box-sizing: border-box;
+    font-size: 1.4rem;
+}
+
+

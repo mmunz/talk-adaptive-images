@@ -1,0 +1,94 @@
+.row {
+    display: flex;
+    position: relative;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+div[class^="col-"], div[class*=" col-"] {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.row .col-3 {
+    width: 25%;
+}
+
+.row .col-6 {
+    width: 50%;
+}
+
+.row .col-9 {
+    width: 75%;
+}
+
+
+.icon {
+    color: white;
+}
+
+.icon-large256 {
+    width: 256px;
+    height: 256px;
+}
+
+object {
+    background-color: white;
+}
+
+.canvas-wrapper {
+    background-color: #fff;
+}
+
+.reveal h1 {
+    font-size: 3rem;
+}
+
+.reveal h2 {
+    font-size: 2rem !important;
+}
+
+.reveal .small {
+    font-size: 16px;
+}
+
+.reveal section img {
+    border: 0;
+    background-color: white;
+    margin: 0 0;
+}
+
+.reveal pre code {
+    font-size: 16px;
+    white-space: pre-wrap;
+}
+
+#why-stylable .icon {
+    transition: color 1s ease;
+}
+
+#why-stylable .icon:hover {
+    color: red;
+}
+
+.radar {
+    width: 450px;
+    height: 400px;
+}
+
+ul.features {
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+.reveal .CodeMirror {
+    font-size: 20px;
+}

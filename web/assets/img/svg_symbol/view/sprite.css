@@ -1,0 +1,45 @@
+.svg-female {
+	background: url("svg/sprite.view-24c46f64.svg") 0 0 no-repeat;
+}
+
+.svg-female-dims {
+	width: 64px;
+	height: 64px;
+}
+
+.svg-sad {
+	background: url("svg/sprite.view-24c46f64.svg") 50% 0 no-repeat;
+}
+
+.svg-sad-dims {
+	width: 64px;
+	height: 64px;
+}
+
+.svg-sad-black {
+	background: url("svg/sprite.view-24c46f64.svg") 0 100% no-repeat;
+}
+
+.svg-sad-black-dims {
+	width: 64px;
+	height: 64px;
+}
+
+.svg-smile {
+	background: url("svg/sprite.view-24c46f64.svg") 50% 100% no-repeat;
+}
+
+.svg-smile-dims {
+	width: 64px;
+	height: 64px;
+}
+
+.svg-smile-black {
+	background: url("svg/sprite.view-24c46f64.svg") 100% 0 no-repeat;
+}
+
+.svg-smile-black-dims {
+	width: 64px;
+	height: 64px;
+}
+
