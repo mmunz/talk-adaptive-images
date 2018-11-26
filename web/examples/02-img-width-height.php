@@ -1,7 +1,7 @@
 <?php
 $title = "img with width and height";
 $body = <<<EOT
-<h2>Simple img tag width width and height</h2>
+<h2>Simple img tag with width and height</h2>
 <textarea id="code" name="code" class="code">
 <head>
     <style>

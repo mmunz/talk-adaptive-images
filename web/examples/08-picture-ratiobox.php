@@ -25,7 +25,7 @@ $body = <<<EOT
             <img src="/examples/img.php?w=640&h=180&d=2"
                  srcset="/examples/img.php?w=640&h=180&d=2 640w, /examples/img.php?w=960&h=240&d=2 960w"
                  sizes="100vw"
-                 alt="" width="640" height="180" class="img-fluid" />
+                 alt="" width="960" height="240" class="img-fluid" />
         </picture>
     </div>
     <p>This line is here to demonstrate <b>page reflow</b>.</p>

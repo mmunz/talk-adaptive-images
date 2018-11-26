@@ -1,14 +1,17 @@
+#preview-mobile, #preview-desktop {
+    height: 400px;
+    box-sizing: border-box;
+
+}
+
 #preview-mobile {
     border: 1px solid blue;
     width: 320px;
-    height: 400px;
-    box-sizing: border-box;
 }
+
 #preview-desktop {
     border: 1px solid orange;
     width: calc(100% - 320px);
-    height: 400px;
-    box-sizing: border-box;
 }
 
 .code, .CodeMirror {

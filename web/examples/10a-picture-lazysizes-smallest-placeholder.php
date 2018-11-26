@@ -7,7 +7,7 @@ $body = <<<EOT
     <script src="/assets/js/lib/lazysizes.min.js"></script>
     <style>
         img {display: block;}
-        .img-fluid {max-width: 100%;height: auto}
+        .img-fluid {width: 100%; max-width: 100%;height: auto}
         @media (min-width: 600px) {
             .col-50 {
                 width: 50%;
@@ -22,18 +22,18 @@ $body = <<<EOT
     </style>
 </head>
 <body>
-    <p>picture with one source, srcset and sizes and ratio box</p>
+    <p>picture with one source, srcset and sizes and ratio box now using one of the smallest 1x1 pixel images available inline (base64 encoded)</p>
     <div class="col-50">
         <div class="ratiobox">
             <picture>
                 <source media="(max-width: 599px)"
-                        srcset="/examples/img.php?w=80&h=60&d=2 80w"
+                        srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs= 1w"
                         data-srcset="/examples/img.php?w=160&h=120&d=2 160w, /examples/img.php?w=320&h=240&d=2 320w"
                         sizes="100vw"
                         data-sizes="auto"
                         >
                 <img src="/examples/img.php?w=960&h=240&d=2"
-                     srcset="/examples/img.php?w=80&h=20&d=2 80w"
+                     srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs= 1w"
                      data-srcset="/examples/img.php?w=480&h=120&d=2 480w, /examples/img.php?w=960&h=240&d=2 960w, "
                      sizes="50vw"
                      data-sizes="auto"

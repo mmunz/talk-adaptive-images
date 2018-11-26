@@ -3,7 +3,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="assets/css/reveal/reveal.css">
-    <link rel="stylesheet" href="assets/css/reveal/theme/black.css">
+    <link rel="stylesheet" href="assets/css/reveal/theme/black-team23.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/lib/head.load.min.js"></script>
 
@@ -21,14 +21,12 @@
             <h1>Fahrplan</h1>
             <ul>
                 <li><a href="#/what">Was sind adaptive images?</a></li>
-                <li><a href="#/evolution">Adaptive images in 5 minuten</a></li>
-                <li><a href="#/use">SVG verwenden</a></li>
-                <li><a href="#/svg-vs-icon-font">Ja aber: Icon Fonts?</a></li>
-                <li><a href="#/workflow">SVG Workflow</a></li>
-                <li><a href="#/designer">Designer</a></li>
-                <li><a href="#/future">Ausblick</a></li>
-                <li><a href="#/fazit">Fazit</a></li>
-                <li><a href="#/readme">Readme</a></li>
+                <li><a href="#/why">Warum adaptive images verwenden?</a></li>
+                <li><a href="#/5minutes">Adaptive images in 5 minuten</a></li>
+                <li><a href="#/usage-in-cms">Adaptive images im CMS</a></li>
+                <li><a href="#/lazysizes">lazysizes.js</a></li>
+                <li><a href="#/c1-adaptive-images">c1-adaptive-images</a></li>
+                <li><a href="#/more-opt">Weitere sinnvolle Bildoptimierungen</a></li>
             </ul>
         </section>
         <section id="what">
@@ -48,7 +46,7 @@
             </ul>
         </section>
         <section>
-            <section id="evolution">
+            <section id="5minutes">
                 <h1>Adaptive images in 5 minuten</h1>
                 <ul>
                     <li>img</li>
@@ -68,15 +66,19 @@
                     <li>Wir wissen, was art direction ist.</li>
                     <li>Wir kennen die Problematik der page reflows und wissen, warum es eine ratio box braucht.</li>
                     <li>Wir erahnen, wie ein Browser Bilder läd und warum wir das sizes-Attribut IMMER korrekt angeben müssen.</li>
+                    <li>Must read: <a href="https://ericportis.com/posts/2014/srcset-sizes/" target="_blank">https://ericportis.com/posts/2014/srcset-sizes/</a></li>
                 </ul>
             </section>
         </section>
-        <section>
+        <section id="usage-in-cms">
             <h1>Adaptive images im CMS</h1>
             <ul>
                 <li>Wir bauen flexible Webseiten. Editoren können Bilder frei anordnen, z.B. in Spalten</li>
                 <li>Als Entwickler kennen wir nun das sizes-Attribut nicht mehr und können es folglich nicht richtig setzen</li>
+                <li>Backend muss crop-Varianten unterstützen, in TYPO3: image wizard.</li>
             </ul>
+
+            <img src="assets/img/gfx/typo3-8_7-image-wizard.png" class="img-responsive"/>
         </section>
         <section id="lazysizes">
             <h1>lazysizes.js</h1>
@@ -89,23 +91,38 @@
                 <li>Demo TYPO3: <a href="https://ai-demo.comuno.net/modes/picture-mit-lazysizesjs-und-image-placeholder/">https://ai-demo.comuno.net/modes/picture-mit-lazysizesjs-und-image-placeholder/</a></li>
             </ul>
         </section>
-        <section id="viewHelpers">
+        <section id="c1-adaptive-images">
             <h1>c1_adaptive_images viewHelpers für TYPO3</h1>
             <ul>
-                <li>Sammlung von ViewHelpers für flexibles Rendern von adaptive Images in TYPO3 / Fluid</li>
+                <li>
+                    Sammlung von ViewHelpern für flexibles Rendern von adaptive Images in TYPO3 / Fluid
+                    <ul>
+                        <li>ai:getCropVariants</li>
+                        <li>ai:getSrcSet</li>
+                        <li>ai:ratioBox</li>
+                        <li>ai:placeholder.image</li>
+                        <li>ai:placeholder.svg</li>
+                        <li>ai:image</li>
+                        <li>ai:picture</li>
+                    </ul>
+                </li>
                 <li>Nimmt dem Entwickler viel Arbeit ab ohne ihn einzuschränken</li>
                 <li>Noch nicht released, aber schon im Einsatz</li>
                 <li>Hohe Test-Abdeckung: Unit, Functional, Acceptance</li>
                 <li><a href="https://github.com/mmunz/c1_adaptive_images/tree/development">https://github.com/mmunz/c1_adaptive_images/tree/development</a></li>
             </ul>
         </section>
-        <section>
+        <section id="more-opt">
             <h1>Weitere sinnvolle Optimierungen</h1>
             <ul>
                 <li>Alternative Formate wie webp oder heif verwenden (30-50% Reduktion)</li>
                 <li>Bilder optimieren durch jpegoptim, optipng, gifsicle</li>
                 <li>SVG nutzen wo sinnvoll</li>
+                <li>focal point und object-fit</li>
             </ul>
+        </section>
+        <section id="the-end">
+            <h1>adaptive images sind einfach toll!</h1>
         </section>
     </div>
 </div>

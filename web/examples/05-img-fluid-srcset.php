@@ -12,8 +12,8 @@ $body = <<<EOT
 <body>
     <p>Making the image adaptive by adding <i>srcset</i> and <i>sizes</i> attributes</p>
     <img class="img-fluid" src="/examples/img.php?w=160&h=40&d=2" alt=""
-        width="620" height="155"
-        srcset="/examples/img.php?w=320&h=80&d=2 320w, /examples/img.php?w=620&h=155&d=2&foo=bar 620w"
+        width="960" height="240"
+        srcset="/examples/img.php?w=320&h=80&d=2 320w, /examples/img.php?w=620&h=155&d=2&foo=bar 620w, /examples/img.php?w=960&h=240&d=2&foo=bar 960w"
         sizes="100vw"
     />
     <p><b>Page reflow is back</b>, but don't care for now, we know how to fight him back.</p>

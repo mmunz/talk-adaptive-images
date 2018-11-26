@@ -1,3 +1,3 @@
 .idea/
-/examples/_temp/*
-!/examples/_temp/.keep/
+/web/examples/_temp/*
+!/web/examples/_temp/.keep/

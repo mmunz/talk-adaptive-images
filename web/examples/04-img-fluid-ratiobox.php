@@ -14,8 +14,8 @@ $body = <<<EOT
 <body>
     <p>We can use the padding-bottom hack to create a ratio box as placeholder for fluid images:</p>
     <div class="ratiobox">
-        <img class="img-fluid" src="/examples/img.php?w=620&h=155&d=2" alt=""
-            width="620" height="155"
+        <img class="img-fluid" src="/examples/img.php?w=900&h=225&d=2" alt=""
+            width="900" height="225"
         />
     </div>
     <p>And once again <b>page reflow has been defeated!</b></p>

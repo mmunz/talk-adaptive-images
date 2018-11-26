@@ -63,22 +63,15 @@ object {
     white-space: pre-wrap;
 }
 
-#why-stylable .icon {
-    transition: color 1s ease;
-}
 
-#why-stylable .icon:hover {
-    color: red;
-}
 
 .radar {
     width: 450px;
     height: 400px;
 }
 
-ul.features {
-    list-style: none;
-    font-size: 1.8rem;
+.reveal section ul {
+    margin-bottom: 2rem;
 }
 
 .red {

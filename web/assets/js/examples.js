@@ -10,8 +10,9 @@ editor.on("change", function () {
 });
 
 function wrapHTML($content) {
-    var html = "<!doctype html>\n<html>";
+    var html = "<!doctype html>\n<html style=\"overflow-y: scroll\">";
     html += $content;
+    html += "<script src=\"/assets/js/examples-debug.js\"></script>";
     html += "</html>";
     return html;
 
@@ -34,3 +35,4 @@ setTimeout(updatePreview, 300);
 // nav.onchange(function() {
 //     window.location.href = this.value;
 // });
+
