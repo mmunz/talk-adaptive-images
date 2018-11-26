@@ -11,13 +11,13 @@
 <body>
 <div class="reveal">
     <div class="slides">
-        <section>
+        <section id="cover">
             <h1>Adaptive images</h1>
             <p>Manuel Munz</p>
             <p>27.11.2018 @ TEAM23</p>
             <!--<p class="small"><a href="https://git.team23.de/mmunz/2018-ai-talk">https://git.team23.de/mmunz/2016-svg-talk</a></p>-->
         </section>
-        <section>
+        <section id="schedule">
             <h1>Fahrplan</h1>
             <ul>
                 <li><a href="#/what">Was sind adaptive images?</a></li>
@@ -45,7 +45,7 @@
                 <li>Psychologische Performanceoptimierung durch Placeholder und lazyloading</li>
             </ul>
         </section>
-        <section>
+        <section id="crashcourse">
             <section id="5minutes">
                 <h1>Adaptive images in 5 minuten</h1>
                 <ul>
@@ -70,6 +70,9 @@
                 </ul>
             </section>
         </section>
+        <section id="being-a-developer">
+            <img src="assets/img/gfx/developer.jpg" class="img-responsive"/>
+        </section>
         <section id="usage-in-cms">
             <h1>Adaptive images im CMS</h1>
             <ul>
@@ -77,13 +80,12 @@
                 <li>Als Entwickler kennen wir nun das sizes-Attribut nicht mehr und können es folglich nicht richtig setzen</li>
                 <li>Backend muss crop-Varianten unterstützen, in TYPO3: image wizard.</li>
             </ul>
-
             <img src="assets/img/gfx/typo3-8_7-image-wizard.png" class="img-responsive"/>
         </section>
         <section id="lazysizes">
             <h1>lazysizes.js</h1>
             <ul>
-                <li>JavaScript Lib, https://github.com/aFarkas/lazysizes</li>
+                <li>JavaScript Lib, <a target="_blank" href="https://github.com/aFarkas/lazysizes">https://github.com/aFarkas/lazysizes</a></li>
                 <li>automatisches Setzen des sizes Attributs auf tatsächliche Breite in Pixeln.</li>
                 <li>Bis dahin Möglichkeit zur Anzeige eines Placeholder-Bilds (z.B. LQIP - low quality image placeholder)</li>
                 <li>Ratio Box weiterhin nötig.</li>
@@ -96,7 +98,7 @@
             <ul>
                 <li>
                     Sammlung von ViewHelpern für flexibles Rendern von adaptive Images in TYPO3 / Fluid
-                    <ul>
+                    <ul class="ul--inline">
                         <li>ai:getCropVariants</li>
                         <li>ai:getSrcSet</li>
                         <li>ai:ratioBox</li>
@@ -122,7 +124,9 @@
             </ul>
         </section>
         <section id="the-end">
-            <h1>adaptive images sind einfach toll!</h1>
+            <h1>Use. Adaptive. Images.</h1>
+            <img src="/assets/img/gfx/aggro.jpg" class="img-responsive" alt="Use goddamn adaptive images!"/>
+            <h1>Please.</h1>
         </section>
     </div>
 </div>

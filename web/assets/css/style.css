@@ -74,6 +74,25 @@ object {
     margin-bottom: 2rem;
 }
 
+.reveal section img {
+    margin-bottom: 2rem;
+}
+
+.reveal .ul--inline {
+    margin-left: 0;
+}
+
+.ul--inline li {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.ul--inline li:before {
+    display: inline-block;
+    margin-right: 0.5rem;
+    content: '✓';
+}
+
 .red {
     color: red;
 }
