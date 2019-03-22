@@ -22,7 +22,7 @@
             <ul>
                 <li><a href="#/what">Was sind adaptive images?</a></li>
                 <li><a href="#/why">Warum adaptive images verwenden?</a></li>
-                <li><a href="#/5minutes">Adaptive images in 5 minuten</a></li>
+                <li><a href="#/five-minutes">Adaptive images in 5 minuten</a></li>
                 <li><a href="#/usage-in-cms">Adaptive images im CMS</a></li>
                 <li><a href="#/lazysizes">lazysizes.js</a></li>
                 <li><a href="#/c1-adaptive-images">c1-adaptive-images</a></li>
@@ -30,11 +30,24 @@
             </ul>
         </section>
         <section id="what">
+            <section id="what-fluid-image">
+                <h1>Fluid / Responsive Image</h1>
+                <p>
+                    Passt sich der Breite des Geräts an. Wenn Bild zu gross ist, dann wird es kleiner skaliert.<br/>
+                    max-width: 100%; height: auto
+                </p>
+                <video width="640" height="480" controls>
+                    <source src="" type="video/webm">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
             <h1>Definition</h1>
             <ul>
-                <li><b>fluid/responsive image:</b> Passt sich der Breite des Geräts an. Wenn Bild zu gross ist, dann wird es kleiner skaliert (max-width: 100%; height: auto)</li>
+                <li><b>fluid/responsive image:</b> </li>
                 <li><b>adaptive image:</b> Für unterschiedliche Geräte(-breiten) wird das jeweils optimalste Bild geladen. Optional auch fluid/responsive.</li>
             </ul>
+
         </section>
         <section id="why">
             <section id="why-intro">
@@ -75,7 +88,7 @@
 
         </section>
         <section id="crashcourse">
-            <section id="5minutes">
+            <section id="five-minutes">
                 <h1>Adaptive images in 5 minuten</h1>
                 <ul>
                     <li>img</li>
