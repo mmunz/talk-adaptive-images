@@ -44,6 +44,15 @@ object {
     font-size: 3rem;
 }
 
+.reveal h1::after {
+    content: '';
+    height: 2px;
+    width: 90px;
+    display: block;
+    background: #b2b623;
+    margin: 1rem auto 4rem auto;
+}
+
 .reveal h2 {
     font-size: 2rem !important;
 }
@@ -103,4 +112,44 @@ object {
 
 .reveal .CodeMirror {
     font-size: 20px;
+}
+
+.reveal .quotations {
+    font-size: 0.75rem;
+    text-align: left;
+}
+
+.reveal .quotations ol {
+    display: block;
+}
+
+.reveal .quotations::before {
+    content: '';
+    height: 2px;
+    width: 90px;
+    display: block;
+    background: #b2b623;
+    margin-bottom: 20px;
+}
+
+.reveal .quotation-link {
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+.reveal figure {
+    display: table;
+    margin-bottom: 2rem;
+}
+
+.reveal figure img {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.reveal figcaption {
+    font-size: 1rem;
+    text-align: left;
+    display: table-caption;
+    caption-side: bottom;
 }

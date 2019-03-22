@@ -95,7 +95,7 @@ function getResources() {
     var resources = window.performance.getEntriesByType("resource");
     resources.forEach(function (resource) {
         if (resource.initiatorType === 'img') {
-            console.log(resource);
+            //console.log(resource);
             imgResources.push(resource);
         }
     });
@@ -107,14 +107,16 @@ function addImgSizeInfo() {
     imgResources.forEach(function(imgResource) {
         sumSize = sumSize + imgResource.transferSize
     });
-    var sizeTotal = document.createElement('div');
-    sizeTotal.appendChild(document.createTextNode('Total img size: ' + sumSize + ' | Loaded images: ' + imgResources.length ));
-    body = document.getElementsByTagName('body')[0];
-    body.appendChild(sizeTotal);
+    if (sumSize > 0) {
+        var sizeTotal = document.createElement('div');
+        sizeTotal.appendChild(document.createTextNode('Total img size: ' + (sumSize / 1000).toFixed(1) + ' kb | Loaded images: ' + imgResources.length));
+        body = document.getElementsByTagName('body')[0];
+        body.appendChild(sizeTotal);
+    }
 }
 
-function everythingLoaded() {
-}
+// function everythingLoaded() {
+// }
 
 var bindEvent = function bindEvent(el, eventName, eventHandler) {
     if (el.addEventListener) {
@@ -124,9 +126,9 @@ var bindEvent = function bindEvent(el, eventName, eventHandler) {
     }
 };
 
-window.addEventListener('load', function(){
-    everythingLoaded();
-});
+// window.addEventListener('load', function(){
+//     everythingLoaded();
+// });
 
 window.observe = function (imgEl) {
     var action = function action() {

@@ -37,13 +37,42 @@
             </ul>
         </section>
         <section id="why">
-            <h1>Warum der Aufwand?</h1>
-            <ul>
-                <li>Zwei Drittel des Datenvolumens einer üblichen Webseite sind Bilder</li>
-                <li>Schnellere Ladezeit durch adaptive images</li>
-                <li>und weniger verbrauchte Bandbreite</li>
-                <li>Psychologische Performanceoptimierung durch Placeholder und lazyloading</li>
-            </ul>
+            <section id="why-intro">
+                <h1>Warum der Aufwand?</h1>
+                <ul>
+                    <li><a href="#why-volume">Gewicht einer Webseite</a></li>
+                    <li>Schnellere Ladezeit durch adaptive images</li>
+                    <li>und weniger verbrauchte Bandbreite</li>
+                    <li>Psychologische Performanceoptimierung durch Placeholder und lazyloading</li>
+                </ul>
+            </section>
+            <section id="why-volume">
+                <h1>Gewicht einer durchschnittlichen Webseite</h1>
+
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <li>Eine durchschnittliche Webseite ist um die 2MB gross <sup class="quotation-link">[1][2]</sup></li>
+                            <li>um die zwei Drittel davon sind Bilder <sup class="quotation-link">[1][2]</sup></li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <figure>
+                            <img src="assets/img/gfx/average-page-size-2016-lg.png" alt="Average weight of a website in 2016" class="img-responsive"/>
+                            <figcaption>Average weight of a website in 2016, from: https://www.keycdn.com/support/the-growth-of-web-page-size</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
+
+                <footer class="quotations">
+                    <ol>
+                        <li><a href="https://httparchive.org/reports/page-weight?view=grid">https://httparchive.org/reports/page-weight?view=grid</li>
+                        <li><a href="https://www.keycdn.com/support/the-growth-of-web-page-size">https://www.keycdn.com/support/the-growth-of-web-page-size</a></li>
+                    </ol>
+                </footer>
+            </section>
+
         </section>
         <section id="crashcourse">
             <section id="5minutes">
@@ -124,9 +153,9 @@
             </ul>
         </section>
         <section id="the-end">
-            <h1>Use. Adaptive. Images.</h1>
-            <img src="/assets/img/gfx/aggro.jpg" class="img-responsive" alt="Use goddamn adaptive images!"/>
-            <h1>Please.</h1>
+            <h1>Adaptive images für schnelle Seiten</h1>
+            <p>Das ist benutzbar, tut es!</p>
+            <img src="/assets/img/gfx/too-fast.gif" class="img-responsive" alt="Use goddamn adaptive images!"/>
         </section>
     </div>
 </div>

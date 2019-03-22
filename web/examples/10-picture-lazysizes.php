@@ -1,7 +1,7 @@
 <?php
 $title = "picture";
 $body = <<<EOT
-<h2>picture with lazysizes</h2>
+<h1 class="header-main">picture with lazysizes</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <script src="/assets/js/lib/lazysizes.min.js"></script>
@@ -27,14 +27,14 @@ $body = <<<EOT
         <div class="ratiobox">
             <picture>
                 <source media="(max-width: 599px)"
-                        srcset="/examples/img.php?w=80&h=60&d=2 80w"
-                        data-srcset="/examples/img.php?w=160&h=120&d=2 160w, /examples/img.php?w=320&h=240&d=2 320w"
+                        srcset="/examples/img.php?w=80&h=60&d=1 80w"
+                        data-srcset="/examples/img.php?w=160&h=120&d=1 160w, /examples/img.php?w=320&h=240&d=1 320w"
                         sizes="100vw"
                         data-sizes="auto"
                         >
-                <img src="/examples/img.php?w=960&h=240&d=2"
-                     srcset="/examples/img.php?w=80&h=20&d=2 80w"
-                     data-srcset="/examples/img.php?w=480&h=120&d=2 480w, /examples/img.php?w=960&h=240&d=2 960w, "
+                <img src="/examples/img.php?w=960&h=240&d=1"
+                     srcset="/examples/img.php?w=80&h=20&d=1 80w"
+                     data-srcset="/examples/img.php?w=480&h=120&d=1 480w, /examples/img.php?w=960&h=240&d=1 960w, "
                      sizes="50vw"
                      data-sizes="auto"
                      alt="" width="960" height="240" class="img-fluid lazyload" />

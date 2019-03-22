@@ -1,7 +1,8 @@
 <?php
 $title = "img with width and height";
+
 $body = <<<EOT
-<h2>Simple img tag with width and height</h2>
+<h1 class="header-main">Simple img tag with width and height</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <style>
@@ -9,15 +10,20 @@ $body = <<<EOT
     </style>
 </head>
 <body>
-    <p>A simple image.</p>
-    <img src="/examples/img.php?w=300&h=155&d=2" alt=""
-        width="300" height="155"
+    <img src="/examples/img.php?w=300&h=155&d=1"
+         alt="Image with width and height attributes"
+         width="300"
+         height="155"
     />
-    <p>Look ma, <b>no page reflow!</b></p>
+    <p>A simple image.</p>
 </body>
 </textarea>
 EOT;
 
+$notes = <<<EOT
+<ul class="notes">
+<li>Look ma, <b>no page reflow!</b></li>
+</ul>
+EOT;
+
 include(__DIR__ . "/00-template.php");
-
-

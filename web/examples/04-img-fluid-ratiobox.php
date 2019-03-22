@@ -1,7 +1,7 @@
 <?php
 $title = "img fluid with ratio  box";
 $body = <<<EOT
-<h2>img-fluid with ratio box</h2>
+<h1 class="header-main">img-fluid with ratio box</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <style>
@@ -14,7 +14,7 @@ $body = <<<EOT
 <body>
     <p>We can use the padding-bottom hack to create a ratio box as placeholder for fluid images:</p>
     <div class="ratiobox">
-        <img class="img-fluid" src="/examples/img.php?w=900&h=225&d=2" alt=""
+        <img class="img-fluid" src="/examples/img.php?w=900&h=225&d=1" alt=""
             width="900" height="225"
         />
     </div>

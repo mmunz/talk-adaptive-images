@@ -1,7 +1,7 @@
 <?php
 $title = "picture";
 $body = <<<EOT
-<h2>picture tag and ratio box</h2>
+<h1 class="header-main">picture tag and ratio box</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <style>
@@ -20,10 +20,10 @@ $body = <<<EOT
     <div class="ratiobox">
         <picture>
             <source media="(max-width: 599px)"
-                    srcset="/examples/img.php?w=160&h=120&d=2 160w, /examples/img.php?w=320&h=240&d=2 320w"
+                    srcset="/examples/img.php?w=160&h=120&d=1 160w, /examples/img.php?w=320&h=240&d=1 320w"
                     sizes="100vw">
-            <img src="/examples/img.php?w=640&h=180&d=2"
-                 srcset="/examples/img.php?w=640&h=180&d=2 640w, /examples/img.php?w=960&h=240&d=2 960w"
+            <img src="/examples/img.php?w=640&h=180&d=1"
+                 srcset="/examples/img.php?w=640&h=180&d=1 640w, /examples/img.php?w=960&h=240&d=1 960w"
                  sizes="100vw"
                  alt="" width="960" height="240" class="img-fluid" />
         </picture>

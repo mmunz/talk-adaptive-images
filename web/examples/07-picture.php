@@ -1,7 +1,7 @@
 <?php
 $title = "picture";
 $body = <<<EOT
-<h2>Simple picture tag</h2>
+<h1 class="header-main">Simple picture tag</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <style>
@@ -12,8 +12,8 @@ $body = <<<EOT
 <body>
     <p>A simple picture with one source</p>
     <picture>
-        <source media="(max-width: 600px)" srcset="/examples/img.php?w=320&h=240&d=2">
-        <img src="/examples/img.php?w=640&h=180&d=2" alt="" width="640" height="180" class="img-fluid" />
+        <source media="(max-width: 600px)" srcset="/examples/img.php?w=320&h=240&d=1">
+        <img src="/examples/img.php?w=640&h=180&d=1" alt="" width="640" height="180" class="img-fluid" />
     </picture>
     <p>This line is here to demonstrate <b>page reflow</b>.</p>
 </body>

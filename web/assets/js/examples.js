@@ -1,7 +1,10 @@
 var delay;
 // Initialize CodeMirror editor with a nice html5 canvas demo.
 var editor = CodeMirror.fromTextArea(document.getElementById('code'), {
-    mode: 'text/html'
+    mode: 'text/html',
+    noScriptCaching: true,
+    theme: 'cobalt',
+    lineNumbers: true,
 });
 
 editor.on("change", function () {
@@ -17,6 +20,7 @@ function wrapHTML($content) {
     return html;
 
 }
+
 function updatePreview() {
     var previewFrames = ['preview-mobile', 'preview-desktop'];
     previewFrames.forEach(function(id) {
@@ -25,9 +29,18 @@ function updatePreview() {
         preview.open();
         preview.write(wrapHTML(editor.getValue()));
         preview.close();
-
     })
 }
+
+// let widthObserver = new MutationObserver(function(mutations) {
+//     if (mutations[0]['attributeName'] === 'style') {
+//         updatePreview();
+//     }
+//     console.log(mutations[0]);
+// });
+//
+// let previewMobile = document.getElementsByClassName('preview__mobile')[0];
+// widthObserver.observe(previewMobile, { attributes: true });
 
 setTimeout(updatePreview, 300);
 

@@ -1,7 +1,7 @@
 <?php
 $title = "picture";
 $body = <<<EOT
-<h2>picture with lazysizes</h2>
+<h1 class="header-main">picture with lazysizes</h1>
 <textarea id="code" name="code" class="code">
 <head>
     <script src="/assets/js/lib/lazysizes.min.js"></script>
@@ -28,13 +28,13 @@ $body = <<<EOT
             <picture>
                 <source media="(max-width: 599px)"
                         srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs= 1w"
-                        data-srcset="/examples/img.php?w=160&h=120&d=2 160w, /examples/img.php?w=320&h=240&d=2 320w"
+                        data-srcset="/examples/img.php?w=160&h=120&d=1 160w, /examples/img.php?w=320&h=240&d=1 320w"
                         sizes="100vw"
                         data-sizes="auto"
                         >
-                <img src="/examples/img.php?w=960&h=240&d=2"
+                <img src="/examples/img.php?w=960&h=240&d=1"
                      srcset="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs= 1w"
-                     data-srcset="/examples/img.php?w=480&h=120&d=2 480w, /examples/img.php?w=960&h=240&d=2 960w, "
+                     data-srcset="/examples/img.php?w=480&h=120&d=1 480w, /examples/img.php?w=960&h=240&d=1 960w, "
                      sizes="50vw"
                      data-sizes="auto"
                      alt="" width="960" height="240" class="img-fluid lazyload" />
