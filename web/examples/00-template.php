@@ -17,6 +17,7 @@
 
 <div style="max-width: 1185px; margin-left: auto; margin-right: auto; background: #efefef">
     <?php
+    $notes = null;
     function menuItemselected($pathsegment)
     {
         $uri = (string)$_SERVER['REQUEST_URI'];

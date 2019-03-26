@@ -39,7 +39,11 @@
             </section>
             <section id="what-fluid-image">
                 <h1>Fluid / Responsive Image</h1>
-                    Passt sich der Breite des Viewports an.<br/>
+                <ul>
+                    <li>Passt sich der Breite des Viewports an.</li>
+                    <li>.img-responsive/.img-fluid in Bootstrap</li>
+                </ul>
+
                 <div class="font-small">max-width: 100%; height: auto</div>
                 <video width="480" height="360" controls data-autoplay>
                     <source src="assets/video/resize-responsive-image.webm" type="video/webm">
