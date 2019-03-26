@@ -21,7 +21,6 @@ $notes = <<< EOT
 </ul>
 EOT;
 
-
 include(__DIR__ . "/00-template.php");
 
 

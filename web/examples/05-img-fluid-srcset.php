@@ -14,14 +14,15 @@ $body = <<<EOT
                  /examples/img.php?w=960&h=240&d=1 960w"
          sizes="100vw"
     />
-    <p>Making the image adaptive by adding <i>srcset</i> and <i>sizes</i> attributes</p>
+    <p>Make the image adaptive by adding <i>srcset</i> and <i>sizes</i> attributes</p>
 </body>
 </textarea>
 EOT;
 $notes = <<<EOT
 <ul class="notes">
     <li><b>Page reflow is back</b>, but don't care for now, we know how to fight the evil villain back.</li>
-    <li>Interesting behaviour in Chrome: Change something in the code editor (exceptthe desktop image). Mobile will load the desktop image then. Firefox does not do this.</li>
+    <li><i>src</i> is still required and used as fallback for browsers not understanding srcset</li>
+    <li>Interesting behaviour in Chrome: Change something in the code editor (except the desktop image): Mobile Iframe will load the desktop image then. Firefox does not do this.</li>
 </ul>
 EOT;
 

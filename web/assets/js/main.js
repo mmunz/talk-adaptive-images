@@ -1,2 +1,3 @@
-console.log('hi');
-Reveal.configure({ history: true });
+Reveal.configure({
+    history: true,
+});

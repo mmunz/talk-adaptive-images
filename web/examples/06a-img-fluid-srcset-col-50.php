@@ -15,17 +15,25 @@ $body = <<<EOT
     </style>
 </head>
 <body>
-    <p>Making the image adaptive by adding <i>srcset</i> and <i>sizes</i> attributes</p>
     <div class="col-50">
         <img class="img-fluid" src="/examples/img.php?w=160&h=40&d=1" alt=""
             width="960" height="240"
-            srcset="/examples/img.php?w=320&h=80&d=1 320w, /examples/img.php?w=620&h=155&d=1&foo=bar 620w, /examples/img.php?w=960&h=240&d=1&foo=bar 960w"
+            srcset="/examples/img.php?w=320&h=80&d=1 320w,
+                    /examples/img.php?w=620&h=155&d=1&foo=bar 620w,
+                    /examples/img.php?w=960&h=240&d=1&foo=bar 960w"
             sizes="100vw" />
         </div>
     <p><b>Page reflow is back</b>, but don't care for now, we know how to fight him back.</p>
 </body>
 </textarea>
 EOT;
+
+$notes = <<<EOT
+<ul class="notes">
+    <li>Note how the image dimensions for desktop are bigger than needed</li>
+</ul>
+EOT;
+
 
 include(__DIR__ . "/00-template.php");
 

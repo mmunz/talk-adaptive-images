@@ -102,6 +102,10 @@ object {
     content: '✓';
 }
 
+.reveal .ul--block {
+    display: block;
+}
+
 .red {
     color: red;
 }
@@ -152,4 +156,20 @@ object {
     text-align: left;
     display: table-caption;
     caption-side: bottom;
+}
+
+.reveal .font-small {
+    font-size: 1.5rem;
+}
+
+.reveal table {
+    color: white;
+}
+
+.reveal .color-ok {
+    color: green;
+}
+
+.reveal .color-error {
+    color: red;
 }
