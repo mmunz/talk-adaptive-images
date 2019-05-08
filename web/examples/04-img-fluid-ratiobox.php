@@ -7,7 +7,7 @@ $body = <<<EOT
     <style>
         img {display: block;}
         .img-fluid {max-width: 100%;height: auto}
-        .ratiobox{position: relative; display: block; height: 0; max-width: 100%; padding-bottom: 25%}
+        .ratiobox{position: relative; display: block; height: 0; max-width: 100%; padding-bottom: 25%; background: lightcyan }
         .ratiobox img {display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; max-width: inherit;}
     </style>
 </head>
@@ -22,5 +22,7 @@ $body = <<<EOT
 </body>
 </textarea>
 EOT;
+
+$notes = null;
 
 include(__DIR__ . "/00-template.php");

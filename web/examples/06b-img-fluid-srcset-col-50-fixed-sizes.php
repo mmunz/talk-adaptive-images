@@ -30,6 +30,8 @@ $body = <<<EOT
 </textarea>
 EOT;
 
+$notes = null;
+
 include(__DIR__ . "/00-template.php");
 
 

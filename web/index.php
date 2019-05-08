@@ -13,8 +13,8 @@
     <div class="slides">
         <section id="cover">
             <h1>Adaptive images</h1>
-            <p>Manuel Munz</p>
-            <p>26.03.2019 @ Web&Wine</p>
+            <p>Manuel Munz / TEAM23</p>
+            <p>09.05.2019 @ HSA</p>
         </section>
         <section id="schedule">
             <h1>Fahrplan</h1>
