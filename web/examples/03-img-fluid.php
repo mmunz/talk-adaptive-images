@@ -5,7 +5,6 @@ $body = <<<EOT
 <textarea id="code" name="code" class="code">
 <head>
     <style>
-        img {display: block;}
         .img-fluid {max-width: 100%;height: auto}
     </style>
 </head>

@@ -4,7 +4,7 @@ $body = <<<EOT
 <h1 class="header-main">Hello srcset and sizes!</h1>
 <textarea id="code" name="code" class="code">
 <head>
-    <style>img {display: block; max-width: 100%; height: auto; margin-bottom: 10px}</style>
+    <style>img {max-width: 100%; height: auto; margin-bottom: 10px}</style>
 </head>
 <body>
     <img src="/examples/img.php?w=160&h=40&d=1" alt=""

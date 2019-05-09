@@ -20,7 +20,7 @@
             <h1>Fahrplan</h1>
             <ul>
                 <li><a href="#/what">Was sind adaptive images?</a></li>
-                <li><a href="#/five-minutes">Adaptive images in 5 minuten</a></li>
+                <li><a href="#/five-minutes">Adaptive images in <s>5</s> 15 minuten</a></li>
                 <li><a href="#/usage-in-cms">Adaptive images im CMS</a></li>
                 <li><a href="#/lazysizes">lazysizes.js</a></li>
                 <li><a href="#/c1-adaptive-images">c1-adaptive-images</a></li>
@@ -71,7 +71,7 @@
         </section>
         <section id="crashcourse">
             <section id="five-minutes">
-                <h1>Adaptive images in 5 minuten</h1>
+                <h1>Adaptive images in <s>5</s> 15 minuten</h1>
                 <ul>
                     <li>img</li>
                     <li>picture</li>

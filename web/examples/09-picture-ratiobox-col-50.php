@@ -6,18 +6,18 @@ $body = <<<EOT
 <head>
     <style>
         img {display: block;}
-        .img-fluid {max-width: 100%;height: auto}
+        .img-fluid {max-width: 100%; height: auto}
         @media (min-width: 600px) {
-            .col-50 {
-                width: 50%;
-            }
+            .col-50 {width: 50%;}
         }
-        .ratiobox{position: relative; display: block; height: 0; max-width: 100%; padding-bottom: 28.125%}
+        .ratiobox{position: relative; display: block; height: 0; max-width: 100%;
+            padding-bottom: 28.125%; background: lightcyan}
         @media (max-width: 599px) {
             .ratiobox {padding-bottom: 75%;}
         }
         .ratiobox img,
-        .ratiobox picture {display: block; position: absolute; top: 0; right: 0; bottom: 0; left: 0; max-width: inherit;}
+        .ratiobox picture {display: block; position: absolute;
+            top: 0; right: 0; bottom: 0; left: 0; max-width: inherit;}
     </style>
 </head>
 <body>
@@ -26,10 +26,12 @@ $body = <<<EOT
         <div class="ratiobox">
             <picture>
                 <source media="(max-width: 599px)"
-                        srcset="/examples/img.php?w=160&h=120&d=1 160w, /examples/img.php?w=320&h=240&d=1 320w"
+                        srcset="/examples/img.php?w=160&h=120&d=1 160w,
+                                /examples/img.php?w=320&h=240&d=1 320w"
                         sizes="100vw">
                 <img src="/examples/img.php?w=640&h=180&d=1"
-                     srcset=" /examples/img.php?w=320&h=90&d=1 320w, /examples/img.php?w=640&h=180&d=1 640w"
+                     srcset="/examples/img.php?w=320&h=90&d=1 320w,
+                             /examples/img.php?w=640&h=180&d=1 640w"
                      sizes="50vw"
                      alt="" width="640" height="180" class="img-fluid" />
             </picture>

@@ -5,12 +5,9 @@ $body = <<<EOT
 <textarea id="code" name="code" class="code">
 <head>
     <style>
-        img {display: block;}
-        .img-fluid {max-width: 100%;height: auto}
+        .img-fluid {display: block; max-width: 100%; height: auto}
         @media (min-width: 600px) {
-            .col-50 {
-                width: 50%;
-            }
+            .col-50 {width: 50%; outline: 1px solid red}
         }
     </style>
 </head>
