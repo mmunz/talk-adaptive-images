@@ -14,6 +14,7 @@ $body = <<<EOT
         width="620" height="155"
     />
     <p>But oh no, our arch enemy <b>page reflow is back!</b></p>
+    <p>Update 2020: Some browsers  (especially Chrome) started to fix the reflow issues. But it has still limitations. See: https://development-tools.net/blog/setting-height-and-width-on-images-is-important-again/</p>
 </body>
 </textarea>
 EOT;
