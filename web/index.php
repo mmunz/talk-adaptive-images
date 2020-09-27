@@ -14,7 +14,7 @@
         <section id="cover">
             <h1>Adaptive images</h1>
             <p>Manuel Munz / TEAM23</p>
-            <p>09.05.2019 @ HSA</p>
+            <p>27.09.2020 @ TYPO3Camp Munich</p>
         </section>
         <section id="schedule">
             <h1>Fahrplan</h1>
@@ -23,7 +23,7 @@
                 <li><a href="#/five-minutes">Adaptive images in <s>5</s> 15 minuten</a></li>
                 <li><a href="#/usage-in-cms">Adaptive images im CMS</a></li>
                 <li><a href="#/lazysizes">lazysizes.js</a></li>
-                <li><a href="#/c1-adaptive-images">c1-adaptive-images</a></li>
+                <li><a href="#/c1-adaptive-images">EXT:c1-adaptive-images</a></li>
                 <li><a href="#/more-opt">Weitere sinnvolle Bildoptimierungen</a></li>
                 <li><a href="#/why">Warum adaptive images verwenden?</a></li>
             </ul>
